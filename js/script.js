@@ -8,7 +8,7 @@
         slides: [
             {
                     image: 'img/01.webp',
-                    title: 'Marvel\'s Spiderman Miles Morale',
+                    title: 'Marvel\'s Spiderman Miles Morales',
                     text: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
                 }, {
                     image: 'img/02.webp',
@@ -43,6 +43,9 @@
             if(this.contatore < 0){
                 this.contatore = this.slides.length - 1;
             }
+        },
+        clickImg(index){
+            this.contatore = index;
         }
     }
   }).mount('#app')
