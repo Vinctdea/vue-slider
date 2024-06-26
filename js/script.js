@@ -30,5 +30,19 @@
             ]
             
       }
+    },
+    methods:{
+        next(){
+            this.contatore++;
+            if(this.contatore > this.slides.length-1){
+                this.contatore = 0;
+            }
+        },
+        prev(){
+            this.contatore--;
+            if(this.contatore < 0){
+                this.contatore = this.slides.length - 1;
+            }
+        }
     }
   }).mount('#app')
